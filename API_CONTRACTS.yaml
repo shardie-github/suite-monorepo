@@ -1,0 +1,17 @@
+openapi: 3.0.3
+info:
+  title: Suite Health API
+  version: 0.1.0
+paths:
+  /healthz:
+    get:
+      summary: Liveness
+      responses: { "200": { description: OK } }
+  /readyz:
+    get:
+      summary: Readiness
+      responses: { "200": { description: Ready } }
+  /v1/ping:
+    get:
+      summary: Ping
+      responses: { "200": { description: Pong } }

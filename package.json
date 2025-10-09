@@ -1,0 +1,15 @@
+{
+  "name": "suite-monorepo-frontend",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:a": "pnpm -C apps/suite-a-ui dev",
+    "dev:b": "pnpm -C apps/suite-b-ui dev",
+    "dev:c": "pnpm -C apps/suite-c-ui dev",
+    "build:a": "pnpm -C apps/suite-a-ui build",
+    "build:b": "pnpm -C apps/suite-b-ui build",
+    "build:c": "pnpm -C apps/suite-c-ui build",
+    "lint": "eslint ."
+  }
+}
